@@ -66,7 +66,7 @@ figure {
 }
 
 .introduction {
-  height: 100vh;
+  height: 90vh;
   background-image: url('/images/desktop/image-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,7 +102,7 @@ h1 {
   justify-content: space-between;
 }
 .row-img {
-  height: 500px;
+  height: 620px;
   width: 50%;
   object-fit: contain;
   position: relative;
@@ -110,8 +110,9 @@ h1 {
 .row-item {
   box-sizing: border-box;
   width: 50%;
-  padding: 0 70px;
+  padding: 0 120px;
   position: relative;
+  background-color: #FFFBF8;
 }
 .row-item.no-pad {
   padding: 0;
@@ -179,10 +180,13 @@ h1 {
 }
 h2 {
   font-family: 'Fraunces', sans-serif;
+  font-size: 2.2rem;
   margin: 0;
 }
 h3 {
   font-family: 'Fraunces', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.4rem;
   margin: 0;
   color: #a8acad;
   margin-bottom: 40px;
@@ -193,7 +197,8 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 100px 20px;
+  background-color: #FFFBF8;
 }
 .testimonials-box {
   display: flex;
@@ -242,6 +247,7 @@ footer {
   padding: 40px;
 }
 footer h3 {
+  font-size: 2rem;
   color: #2c7466;
   text-transform: lowercase;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../public/logo.png'
 import { BsPinterest } from 'react-icons/bs'
 import {
@@ -9,10 +9,21 @@ import {
   AiOutlineTwitter,
 } from 'react-icons/ai'
 import Image from 'next/image'
+import useWindowDimensions from './api/useWindowsDimensions'
 
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [device, setDevice] = useState('desktop')
+  const { width } = useWindowDimensions()
 
+  useEffect(() => {
+    if (width < 500 && device === 'desktop') {
+      setDevice('mobile')
+    }
+    if (width > 500 && device === 'mobile') {
+      setDevice('desktop')
+    }
+  }, [width])
   return (
     <div className='app'>
       <header className='header'>
@@ -67,7 +78,7 @@ const Index = () => {
             </div>
             <figure className='row-img'>
               <Image
-                src='/images/desktop/image-transform.jpg'
+                src={`/images/${device}/image-transform.jpg`}
                 alt='white egg on with a orange background'
                 layout='fill'
               />
@@ -76,7 +87,7 @@ const Index = () => {
           <div className='row'>
             <figure className='row-img'>
               <Image
-                src='/images/desktop/image-stand-out.jpg'
+                src={`/images/${device}/image-stand-out.jpg`}
                 alt='white egg on with a orange background'
                 layout='fill'
               />
@@ -104,7 +115,7 @@ const Index = () => {
               </div>
               <figure className='row-img'>
                 <Image
-                  src='/images/desktop/image-graphic-design.jpg'
+                  src={`/images/${device}/image-graphic-design.jpg`}
                   alt='white egg on with a orange background'
                   layout='fill'
                 />
@@ -120,7 +131,7 @@ const Index = () => {
               </div>
               <figure className='row-img'>
                 <Image
-                  src='/images/desktop/image-photography.jpg'
+                  src={`/images/${device}/image-photography.jpg`}
                   alt='white egg on with a orange background'
                   layout='fill'
                 />
@@ -190,28 +201,28 @@ const Index = () => {
         <section className='gallery'>
           <figure className='gallery-img'>
             <Image
-              src='/images/desktop/image-gallery-milkbottles.jpg'
+              src={`/images/${device}/image-gallery-milkbottles.jpg`}
               alt='white egg on with a orange background'
               layout='fill'
             />
           </figure>
           <figure className='gallery-img'>
             <Image
-              src='/images/desktop/image-gallery-orange.jpg'
+              src={`/images/${device}/image-gallery-orange.jpg`}
               alt='white egg on with a orange background'
               layout='fill'
             />
           </figure>
           <figure className='gallery-img'>
             <Image
-              src='/images/desktop/image-gallery-cone.jpg'
+              src={`/images/${device}/image-gallery-cone.jpg`}
               alt='white egg on with a orange background'
               layout='fill'
             />
           </figure>
           <figure className='gallery-img'>
             <Image
-              src='/images/desktop/image-gallery-sugarcubes.jpg'
+              src={`/images/${device}/image-gallery-sugar-cubes.jpg`}
               alt='white egg on with a orange background'
               layout='fill'
             />

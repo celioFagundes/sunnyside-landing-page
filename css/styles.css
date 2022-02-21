@@ -133,7 +133,7 @@ h1 {
   align-items: center;
   text-align: center;
 }
-.presentation-description p{
+.presentation-description p {
   max-width: 400px;
 }
 .presentation-description.graphic {
@@ -181,27 +181,27 @@ h2 {
   font-family: 'Fraunces', sans-serif;
   margin: 0;
 }
-h3{
+h3 {
   font-family: 'Fraunces', sans-serif;
   margin: 0;
-  color: #A8ACAD;
+  color: #a8acad;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
-.testimonials{
+.testimonials {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
 }
-.testimonials-box{
+.testimonials-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.testimonials-item{
+.testimonials-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -209,57 +209,55 @@ h3{
   text-align: center;
   margin-right: 15px;
 }
-.client-img img{
+.client-img img {
   border-radius: 50%;
 }
-.testimonial{
+.testimonial {
   color: #838388;
 }
-.client-name{
+.client-name {
   font-family: 'Fraunces', sans-serif;
 }
-.client-role{
+.client-role {
   font-size: 16px;
-  color: #B7B5B6;
+  color: #b7b5b6;
 }
-.gallery{
+.gallery {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.gallery-img{
+.gallery-img {
   position: relative;
   height: 450px;
   width: 100%;
-  
 }
-footer{
-  background-color: #90D4C5;
+footer {
+  background-color: #90d4c5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px;
 }
-footer h3{
-  color: #2C7466;
+footer h3 {
+  color: #2c7466;
   text-transform: lowercase;
 }
-footer ul{
+footer ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: #448879;
   margin-right: 15px;
 }
-footer a:hover{
+footer a:hover {
   color: #fff;
-  
 }
 @media (max-width: 1100px) {
   .box-header {
@@ -325,57 +323,58 @@ footer a:hover{
   h1 {
     font-size: 4rem;
   }
-  .row{
+  .row {
     flex-wrap: wrap;
   }
-  .row-item{
+  .row-item {
     padding: 70px 20px;
     text-align: center;
     width: 100%;
   }
-  .row.first-row{
+  .row.first-row {
     flex-direction: column-reverse;
   }
-  .row-img{
+  .row-img {
     width: 100%;
   }
-  .learn-link::after{
+  .learn-link::after {
     left: 50%;
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
   }
-  .testimonials-box{
+  .testimonials-box {
     flex-wrap: wrap;
   }
-  .testimonials-item{
+  .testimonials-item {
     margin-bottom: 35px;
   }
-  .gallery{
+  .gallery {
     flex-wrap: wrap;
   }
-  .gallery-img{
+  .gallery-img {
     height: 400px;
     width: 50%;
   }
 }
 
 @media (max-width: 530px) {
+  .introduction {
+    background-image: url('/images/mobile/image-header.jpg');
+  }
   h1 {
     font-size: 3rem;
   }
   h2 {
     font-size: 2rem;
   }
-  .gallery-img{
+  .gallery-img {
     height: 300px;
-   
   }
 }
 @media (max-width: 380px) {
   h1 {
     font-size: 2.5rem;
   }
-  .gallery-img{
+  .gallery-img {
     height: 220px;
-   
   }
 }

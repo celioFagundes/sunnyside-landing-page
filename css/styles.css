@@ -67,7 +67,7 @@ figure {
 
 .introduction {
   height: 100vh;
-  background-image: url('../public/images/desktop/image-header.jpg');
+  background-image: url('/images/desktop/image-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top, left;
